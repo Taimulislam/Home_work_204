@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="দোকানের হিসাব" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="19dp"
+        android:text="কেনা দাম কত" />
+
+    <EditText
+        android:layout_marginTop="19dp"
+        android:id="@+id/editTextPurchasePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ক্রয়মূল্য (টাকা)"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="কত % প্রফিট করতে চাও" />
+
+    <EditText
+        android:id="@+id/editTextProfitPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="লাভের শতাংশ"
+        android:inputType="numberDecimal"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCalculate"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/two_color_curved"
+        android:text="হিসাব করুন"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:paddingTop="16dp"/>
+</LinearLayout>
